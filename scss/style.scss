@@ -16,11 +16,12 @@ color:#333;
 }
 h2{
 text-align: center;
-@include font-size(32);
+@include font-size(30);
 margin-bottom: 40px;
 @include lsp{
-@include font-size(28);
+@include font-size(26);
 margin-bottom: 30px;
+padding: 0 10px;
 }
 span{
 color: $main_color;
@@ -112,6 +113,7 @@ position: relative;
 margin-bottom: 100px;
 @include lsp{
 margin-bottom: 0;
+height: 45vh;
 }
 .top-btn-wrapper{
 width: 420px;
@@ -172,7 +174,7 @@ padding: 0 20px;
 @include font-size(22);
 }
 .tag-line2{
-@include font-size(16);
+display: none;
 }
 }
 }
@@ -269,6 +271,14 @@ text-underline-offset: 2px;
 }
 }
 }
+
+.sp-on{
+display: none;
+@include lsp{
+display: block;
+}
+}
+
 
 //ハンバーガー
 #ham-btn,#g-nav-sp{
