@@ -34,14 +34,11 @@ thisYear = new Date().getFullYear();
 document.querySelector('#thisYear').textContent = thisYear;
 
 
-$(window).on('load resize', function(){
-if(window.matchMedia('(min-width:768px)').matches){
+
 
 $('.bxslider').bxSlider({
-auto:true,
 mode:'fade',
+auto:true,
 pager:false,
 controls:false
-});
-}
 });

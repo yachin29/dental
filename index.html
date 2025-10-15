@@ -10,51 +10,53 @@
 <body>
 <header>
 <h1>よぼう歯科医院</h1>
-<div class="vertical">
-<p class="tag-line1"><span>いつまでも</span><br><span>笑っていてほしいから。</span></p>
-<p class="tag-line2"><span>あなたの歯の健康を</span><br><span>そばで見守る</span><br><span>歯のコンシェルジュ</span></p>
+<div class="top-btn-wrapper">
+<p class="web-btn"><a href="#">web予約</a></p>
+<p class="phone-btn"><a href="#">お問い合わせ</a></p>
 </div>
+
+<p id="ham-btn"><span></span></p>
+</header>
+
 <nav id="g-nav">
 <ul>
 <li><img src="img/felica-title.svg" alt=""></li>
 <li><a href="#">予防歯科とは</a></li>
 <li><a href="#">当院について</a></li>
 <li><a href="#">院長挨拶</a></li>
-<li><a href="#">設備紹介</a></li>
-<li><a href="#">診療内容</a></li>
+<li><a href="#">お知らせ</a></li>
+<li><a href="#">採用情報</a></li>
 <li><a href="#">アクセス</a></li>
 </ul>
 </nav>
-<p id="ham-btn"><span></span></p>
 <nav id="g-nav-sp">
 <ul>
 <li><a href="#">予防歯科とは</a></li>
 <li><a href="#">当院について</a></li>
 <li><a href="#">院長挨拶</a></li>
-<li><a href="#">設備紹介</a></li>
-<li><a href="#">診療内容</a></li>
+<li><a href="#">お知らせ</a></li>
+<li><a href="#">採用情報</a></li>
 <li><a href="#">アクセス</a></li>
 <li><a href="#">web予約</a></li>
 <li><a href="#">お問い合わせ</a></li>
 </ul>
 </nav>
+
+
 <div class="main-visual">
 <div class="main-visual-inner"></div>
-<ul class="bxslider">
-<li><img src="img/main-01.jpg" alt=""></li>
-<li><img src="img/main-02.jpg" alt=""></li>
-<li><img src="img/main-03.jpg" alt=""></li>
-</ul>
+<img src="img/main-01.jpg" alt="">
+<p class="vertical"><span>いつまでも</span><span>笑っていてほしいから。</span></p>
 </div>
-<div class="top-btn-wrapper">
-<p class="web-btn"><a href="#">web予約</a></p>
-<p class="phone-btn"><a href="#">お問い合わせ</a></p>
-</div>
-</header>
+
 
 <main>
+
+<p class="main-copy">あなたの歯の健康をそばで見守る歯のコンシェルジュ</p>
+
+
 <div class="prevention">
-<h2><span class="txt1">Prevention</span>患者様のライフスタイル<br class="sp-on">から変えていく<br><span>『予防』</span>に特化した<br class="sp-on">歯医者さん</h2>
+<h2 data-en="Prevention">患者様のライフスタイル<br class="sp-on">から変えていく<br><span>『予防』</span>に特化した<br class="sp-on">歯医者さん</h2>
 <p class="lead">「歯の健康について、誰に相談したらいいかわからない」「自分に合ったケア方法を知りたい」そんなお悩みはありませんか？ 当院は、あなた専属の「歯のコンシェルジュ」として、不安を解消し、最適な予防プランをご提案します。いつまでも心から笑える毎日を、私たちがそばで見守ります。</p>
 
 
@@ -65,7 +67,7 @@
 </div><!-- /.prevention -->
 
 <div class="feature">
-<h2><span class="txt1">feature</span>よぼう歯科院の特徴</h2>
+<h2 data-en="feature">よぼう歯科院の特徴</h2>
 
 <div class="feature-wrapper">
 <div class="feature-box1">
@@ -105,19 +107,18 @@
 </div><!-- /.feature -->
 
 <div class="intro">
-<h2><span class="txt1">introduction</span>院長あいさつ</h2>
+<h2 data-en="Message">院長あいさつ</h2>
 <div class="intro-visual">
 <img src="img/intro.png" alt="">
 </div>
 <div class="intro-box">
 <p class="intro-txt">私は、これまでの治療経験の中で、「悪くなってから治す」というサイクルに疑問を感じてきました。当院を開業したのは、治療ではなく、予防を通じて患者様の未来の健康を守りたいという強い思いがあるからです。この地域の皆様が、生涯にわたってご自身の歯で美味しく食事をし、心から笑えるよう、心を込めてサポートさせていただきます。</p>
-<p class="txt-btn"><a href="#">院長あいさつ</a></p>
 </div><!-- /.intro-box -->
 </div><!-- /.intro -->
 
 <div class="news">
 <div class="news-box">
-<h2><span class="txt1">news</span>お知らせ</h2>
+<h2 data-en="News">お知らせ</h2>
 <p class="txt-btn"><a href="#">お知らせ一覧</a></p>
 </div>
 <dl class="news-list">
@@ -133,7 +134,7 @@
 
 <div class="recruit">
 <div class="recruit-alpha">
-<h2><span class="txt1">recruit</span>採用情報</h2>
+<h2>採用情報</h2>
 <p class="recruit-text">患者様だけでなく、スタッフ全員が笑顔で働ける環境づくりに力を入れています。経験が浅い方でも、充実した研修制度でしっかりサポート。「予防歯科」のプロフェッショナルを目指し、明るく前向きに成長できる方からのご応募をお待ちしています。</p>
 <p class="txt-btn"><a href="#">採用情報</a></p>
 </div>
@@ -142,7 +143,7 @@
 <div class="access">
 <div class="access-inner">
 <div class="access-box">
-<h2><span class="txt1">access</span>アクセス</h2>
+<h2 data-en="Access">アクセス</h2>
 <ul class="access-list">
 <li>〒000-0000</li>
 <li>東京都豊島区南池袋1-1-1000</li>
