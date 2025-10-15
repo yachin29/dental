@@ -1,29 +1,2 @@
-//変数
-$main_color:#3376c7;
-$sub_color:#ECF7FF;
-$sub2_color:#FDC71C;
 
-$spc:1200px;
-$tab:959px;
-$lsp:767px;
-
-@mixin spc{
-@media (max-width:$spc){
-@content;
-}
-}
-@mixin tab{
-@media (max-width:$tab){
-@content;
-}
-}
-@mixin lsp{
-@media (max-width:$lsp){
-@content;
-}
-}
-
-@mixin font-size($size){
-font-size: ($size / 16) + rem;
-}
 

@@ -1,3 +1,8 @@
+
+
+
+
+
 //ハンバーガー
 
 $('#ham-btn').on('touchstart ',function(){
@@ -21,4 +26,22 @@ $(window).on('load resize', function(){
   };
    windowWidth = ww;
   };
+});
+
+
+
+thisYear = new Date().getFullYear();
+document.querySelector('#thisYear').textContent = thisYear;
+
+
+$(window).on('load resize', function(){
+if(window.matchMedia('(min-width:768px)').matches){
+
+$('.bxslider').bxSlider({
+auto:true,
+mode:'fade',
+pager:false,
+controls:false
+});
+}
 });

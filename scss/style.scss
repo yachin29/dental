@@ -1,6 +1,36 @@
-@import "reset";
-@import "mixin";
+@use "reset";
 @import "jquery.bxslider";
+
+//変数
+$main_color:#3376c7;
+$sub_color:#ECF7FF;
+$sub2_color:#FDC71C;
+
+$spc:1200px;
+$tab:959px;
+$lsp:767px;
+
+@mixin spc{
+@media (max-width:$spc){
+@content;
+}
+}
+@mixin tab{
+@media (max-width:$tab){
+@content;
+}
+}
+@mixin lsp{
+@media (max-width:$lsp){
+@content;
+}
+}
+
+@mixin font-size($size){
+font-size: ($size / 16) + rem;
+}
+
+
 
 //汎用パーツ
 html{
@@ -491,10 +521,7 @@ margin: 50px 0 200px;
 position: relative;
 .intro-visual{
 width: 100%;
-height: 400px;
-@include lsp{
-height: 300px;
-}
+height: 60vh;
 img{
 object-fit: cover;
 width: 100%;
@@ -502,7 +529,7 @@ height: 100%;
 }
 }
 .intro-box{
-width: 400px;
+width: 44%;
 background-color: #FFF;
 line-height: 2;
 box-shadow: 0 0 20px#bdbdbd;
@@ -589,14 +616,14 @@ padding: 0 0 10px 10px;
 }
 .recruit{
 width: 100%;
-height: 400px;
-background: url(../img/content-07.jpg)no-repeat center center/cover;
+height: 70vh;
+background: url(../img/recruit.jpg)no-repeat center center/cover;
 .recruit-alpha{
 width: 100%;
 height: 100%;
 padding-top: 60px;
 text-align: center;
-background: linear-gradient(90deg, rgba(2,156,167,0.7) 0%, rgba(0,182,90,0.4) 100%);
+background: linear-gradient(90deg, #03838cb3 0%, #00b65a66 100%);
 color: #FFF;
 @include lsp{
 padding-top: 30px;
@@ -604,6 +631,12 @@ padding-top: 30px;
 .txt1{
 color: #FFF;
 }
+.recruit-text{
+max-width: 680px;
+margin: 20px auto 40px;
+line-height: 1.8;
+}
+
 .txt-btn{
 margin: 30px auto 0;
 }
@@ -663,7 +696,7 @@ height: 100%;
 }
 .schedule{
 width: 100%;
-background: url(../img/content-05.jpg)no-repeat center center/cover;
+background: url(../img/access.jpg)no-repeat center bottom/cover;
 .schedule-alpha{
 width: 100%;
 height: 100%;
@@ -747,73 +780,10 @@ text-align: center;
 }
 }
 
-//アニメーション
-.anime-wrapper{
-width: 240px;
-height: 60px;
-background-color: $main_color;
-position: absolute;
-left: 0;
-bottom: 0;
-color: #FFF;
-display: flex;
-.anime-num{
-height: 60px;
-padding-left:20px;
-overflow: hidden;
-li{
-height: 60px;
-line-height: 60px;
-animation: number 12s linear infinite;
-}
-}
-}
-@keyframes number{
-0%{transform: translateY(0);opacity: 1;}
-25%{transform: translateY(0);opacity: 1;}
-31%{transform: translateY(0);opacity: 0;}
-32%{transform: translateY(-60px);opacity: 0;}
-33%{transform: translateY(-60px);opacity: 1;}
-61%{transform: translateY(-60px);opacity: 1;}
-67%{transform: translateY(-60px);opacity: 0;}
-68%{transform: translateY(-120px);opacity: 0;}
-69%{transform: translateY(-120px);opacity: 1;}
-93%{transform: translateY(-120px);opacity: 1;}
-99%{transform: translateY(-120px);opacity: 0;}
-100%{transform: translateY(0);opacity: 0;}
-}
-.anime-bar{
-width: 50%;
-height: 2px;
-background-color: #FFF;
-position: absolute;
-top: 0;
-right: 20px;
-bottom: 0;
-margin: auto;
-overflow: hidden;
-&::before{
-content: "";
-width: 100%;
-height: 2px;
-background-color: #bdbdbd;
-position: absolute;
-right: 0;
-animation: bar 4s 0.5s linear infinite;
-}
-}
-@keyframes bar{
-0%{transform: translateX(-100%);}
-100%{transform: translateX(0);}
-}
-@include lsp{
-.anime-wrapper{
-display: none;
-}
-}
 
-//bxslider
-.bxslider>li:nth-of-type(n+2){
-display: none;
-}
+
+
+
+
+
 
