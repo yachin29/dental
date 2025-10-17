@@ -90,6 +90,10 @@ font-size: rem(20);
 background-color: $main_color;
 border: 1px solid $main_color;
 color: #FFF;
+&::after{
+translate: 10px 0;
+transition: 0.1s;
+}
 }
 }
 }
@@ -124,6 +128,7 @@ background: #FFF url(../img/photo.svg)no-repeat 60% center/60%;
 }
 }
 }
+
 .phone-btn>a{
 background-color: #dfdede;
 &::before{
@@ -186,15 +191,13 @@ width: 100%;
 }
 
 
+
 .vertical{
 position: absolute;
 right: 100px;
 top: 100px;
 font-size: rem(24);
 writing-mode: vertical-rl;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
 span{
 height: fit-content;
 width: fit-content;
@@ -390,13 +393,15 @@ padding: 6px;
 //main部分
 
 
+
 main{
 padding: 160px 0 40px;
-}
+
 .main-copy{
 text-align: center;
 font-size: rem(30);
 margin-bottom: 40px;
+}
 }
 
 
